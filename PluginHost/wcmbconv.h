@@ -1,6 +1,6 @@
 #pragma once
 
-//ÓÃÓÚÔÚ char* ºÍ wchar_t* Ö®¼ä×ª»»µÄÍ·ÎÄ¼ş
+//ç”¨äºåœ¨ char* å’Œ wchar_t* ä¹‹é—´è½¬æ¢çš„å¤´æ–‡ä»¶
 
 char* wchar2char(const wchar_t* wchar)
 {

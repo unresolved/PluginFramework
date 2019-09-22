@@ -12,7 +12,7 @@ DLLAPI BOOL PluginEntry(PPLUGINHOST pInstance)
 		cout << "easyauth: not exists" << endl;
 		// return FALSE;
 	}
-	/*
+	// 中文字符
 	BOOL ret = FALSE;
 	BOOL bResult = pInstance->CallEventHandler("easyauth", "EnvSupported", ret);
 	if (bResult == FALSE)
@@ -31,7 +31,6 @@ DLLAPI BOOL PluginEntry(PPLUGINHOST pInstance)
 		pInstance->CallEventHandler("", "DoNotCallAgainInit", GetModuleHandle(NULL));
 		return FALSE;
 	}
-	*/
 	pInstance->RegisterPlugin(GetModuleHandle(NULL), "demo");
 	pInstance->RegisterEventHandler("demo", "MyHandler", MyEventHandler);
 	return TRUE;

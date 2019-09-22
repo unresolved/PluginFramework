@@ -1,4 +1,4 @@
 #pragma once
 
-// ȱ�ٲ���
+// 缺少参数
 #define ERROR_MISSING_ARUMENT 0x01
