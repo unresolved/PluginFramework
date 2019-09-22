@@ -1,0 +1,4 @@
+#pragma once
+
+// È±ÉÙ²ÎÊý
+#define ERROR_MISSING_ARUMENT 0x01
