@@ -7,12 +7,13 @@ BOOL MyEventHandler(LPVOID lpArgName1, LPVOID lpReserved);
 
 DLLAPI BOOL PluginEntry(PPLUGINHOST pInstance)
 {
+	/*
 	if (pInstance->CheckPluginExists("easyauth") == FALSE)
 	{
 		cout << "easyauth: not exists" << endl;
-		// return FALSE;
+		return FALSE;
 	}
-	// 中文字符
+	*/
 	BOOL ret = FALSE;
 	BOOL bResult = pInstance->CallEventHandler("easyauth", "EnvSupported", ret);
 	if (bResult == FALSE)
