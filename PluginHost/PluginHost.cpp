@@ -15,6 +15,7 @@ int main(int argc, char* argv[])
 	// 这里把当前活动代码设置成为系统默认代码页
 	char szBuf[5]; // .XXX\0
 	sprintf(szBuf, ".%d", GetACP());
+
 	setlocale(LC_CTYPE, szBuf);
 
 	cout << "Plugin Host [version " << PLUGINHOST_VERSION << "]" << endl;
